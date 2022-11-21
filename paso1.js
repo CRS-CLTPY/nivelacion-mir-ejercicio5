@@ -5,8 +5,8 @@ function sum(array){
     for( let i=0; i<array.length; i++){
         suma += array[i];
     }
-    return console.log(`${suma}`)
+    return suma;
 }
-sum([1, 2, 3])
-sum([10, 8, 12, 5])
-sum([])
+console.log(sum([1, 2, 3]));
+console.log(sum([10, 8, 12, 5]));
+console.log(sum([]));
