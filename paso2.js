@@ -10,10 +10,10 @@ function max(array){
     if (maxValue === 0 ){
         maxValue = undefined;
     }
-    return console.log(`${maxValue}`);
+    return maxValue;
 
 }
 
-max([1, 3, 2]);
-max([10, 9, 8, 7, 6, 5, 4]);
-max([]);
+console.log(max([1, 3, 2]));
+console.log(max([10, 9, 8, 7, 6, 5, 4]));
+console.log(max([]));
