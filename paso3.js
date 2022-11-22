@@ -1,11 +1,13 @@
 //Crea una función maxIndex que reciba una arreglo de números y retorne el índice donde se encuentra el mayor. Si el arreglo está vacío debe retornar -1.
 
 function maxIndex( array ){
+    let counter = 0
     let index = 0
     if (array.length >= 1 ){
         for( let i=0; i<array.length; i++){
-            if (index < array[i]){
-                index = array.indexOf(i);
+            if (counter < array[i]){
+                counter = array[i];
+                index = array.indexOf(array[i]);
             }
         }
     } else {
